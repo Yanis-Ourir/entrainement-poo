@@ -38,12 +38,12 @@ Créer une classe `Véhicule` avec une propriété privée `marque` et un constr
 $voiture = new Voiture('Toyota');
 
 // Appel de la méthode afficherMarque() de la classe Voiture
-echo $voiture->afficherMarque(); // Affiche "Marque de la voiture : Toyota"
+echo $voiture->afficherMarque(); // Affiche "Marque du véhicule : Toyota"
 
 // Instanciation d'un objet Moto 
 $moto = new Moto('Yamaha');
 
 // Appel de la méthode afficherMarque() de la classe Moto
-echo $moto->afficherMarque(); // Affiche "Marque de la moto : Yamaha"
+echo $moto->afficherMarque(); // Affiche "Marque du véhicule : Yamaha"
 ``` 
 
