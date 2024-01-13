@@ -15,7 +15,7 @@ Essayer d'instancier plusieurs étudiants.
 
 ### Exemple d'utilisation
 ```php
-// Création d'un objet Etudiant
+// Instanciation d'un objet Etudiant
 $etudiant = new Etudiant('John', 'Doe', 20, 'Informatique');
 
 // Appel de la méthode presentation() de la classe Etudiant
@@ -34,7 +34,7 @@ Créer une classe `Véhicule` avec une propriété privée `marque` et un constr
 
 ## Exemple d'utilisation
 ```php
-// Création d'un objet Voiture
+// Instanciation d'un objet Voiture
 $voiture = new Voiture('Toyota');
 
 // Appel de la méthode afficherMarque() de la classe Voiture
