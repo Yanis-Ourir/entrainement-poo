@@ -9,6 +9,7 @@ Créer une classe `Personne` avec des propriétés privées pour le nom, le pré
 Ensuite, créer une classe `Etudiant` héritant de `Personne` avec une nouvelle propriété étude et deux nouvelles méthodes :  
 - `setEtude()` pour affecter une valeur à la propriété étude.
 - `getEtude()` pour récupérer les informations spécifiques à ses études.
+
 Essayer d'instancier plusieurs étudiants. 
 
 ### Principes de POO utilisés
