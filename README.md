@@ -6,9 +6,9 @@
 
 ### Objectif
 Créer une classe `Personne` avec des propriétés privées pour le nom, le prénom et l'âge, utilisant des getters pour un accès sécurisé. Ajouter une méthode `presentation()` pour afficher les informations de la personne. 
-Ensuite, créer une classe `Etudiant` héritant de `Personne` avec une nouvelle propriété étude et deux nouvelles méthodes :
-`setEtude()` pour affecter une valeur à la propriété étude.
-`getEtude()` pour récupérer les informations spécifiques à ses études.
+Ensuite, créer une classe `Etudiant` héritant de `Personne` avec une nouvelle propriété étude et deux nouvelles méthodes :  
+- `setEtude()` pour affecter une valeur à la propriété étude.
+- `getEtude()` pour récupérer les informations spécifiques à ses études.
 Essayer d'instancier plusieurs étudiants. 
 
 ### Principes de POO utilisés
