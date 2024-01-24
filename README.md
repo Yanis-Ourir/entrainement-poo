@@ -74,7 +74,7 @@ Utiliser également l'hydratation en SQL pour stocker quelques animaux dans une 
 
 ```php
 // Utilisation des objets
-$cat = new Cat('Whiskers', 'Chat', 3);
+$cat = new Cat('Rex', 'Chat', 3);
 $cat->setCouleur('Noir');
 
 echo $cat->presentation(); // Affiche "Je suis un Chat nommé Whiskers et j'ai 3 ans."
