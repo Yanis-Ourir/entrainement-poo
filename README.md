@@ -50,7 +50,7 @@ $moto = new Moto('Yamaha');
 // Appel de la méthode afficherMarque() de la classe Moto
 echo $moto->afficherMarque(); // Affiche "Marque du véhicule : Yamaha"
 ``` 
-## Exercice 3 - Gestion d'une classe Animal
+## Exercice 3 - Gestion d'une classe Cat
 
 **/!\ Télécharger bien le fichier SQL fourni plus haut ! Et importer le dans une BDD créée au préalable. !**
 
