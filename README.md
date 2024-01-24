@@ -50,4 +50,39 @@ $moto = new Moto('Yamaha');
 // Appel de la méthode afficherMarque() de la classe Moto
 echo $moto->afficherMarque(); // Affiche "Marque du véhicule : Yamaha"
 ``` 
+## Exercice 3 - Gestion d'une classe Animal
+
+**/!\ Télécharger bien le fichier SQL fourni plus haut ! Et importer le dans une BDD créée au préalable. !**
+
+### Objectif
+
+Créer une classe `Cat` avec des propriétés privées pour le nom, l'espèce et l'âge, utilisant des getters et des setters pour un accès sécurisé. Ajouter une méthode `presentation()` pour afficher les informations du chat.
+
+Ensuite, créer une classe `CatManager` qui va s'occuper des requêtes SQL, avec comme propriété votre base de données. Cette classe possède deux méthodes :
+
+- `add()` qui prend pour paramètre un objet `Cat` et qui va l'insérer dans votre BDD.
+- `findAllCat()` qui va faire une requête SQL pour aller chercher tous vos chats et qui va retourner un tableau d'objet `Cat`.
+
+Utiliser également l'hydratation en SQL pour stocker quelques animaux dans une base de données appelée "animal_cat". La table "cat" doit avoir les colonnes suivantes : id (clé primaire), nom, espece, age, couleur.
+
+### Principes de POO utilisés
+
+- Encapsulation: Utilisation de propriétés privées et getter pour afficher les propriétés de la classe.
+- Hydratation en SQL: Pour récupérer nos données dans la BDD et les afficher.
+
+### Exemple d'utilisation en PHP
+
+```php
+// Utilisation des objets
+$cat = new Cat('Whiskers', 'Chat', 3);
+$cat->setCouleur('Noir');
+
+echo $cat->presentation(); // Affiche "Je suis un Chat nommé Whiskers et j'ai 3 ans."
+echo "Ma couleur est : " . $cat->getCouleur(); // Affiche "Ma couleur est : Noir"
+
+$catManager = new CatManager($database);
+$catManager->add($cat); // ajoute un chat à votre BDD
+
+$catManager->findAllCat(); // une requête SQL qui vous retourne un tableau d'objet Cat ! ET NON UN ARRAY 
+```
 
